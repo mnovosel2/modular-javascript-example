@@ -1,0 +1,26 @@
+{
+  "name": "degordian",
+  "version": "0.0.1",
+  "homepage": "http://www.degordian.com/",
+  "authors": [
+    "Mario Novoselec"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.4"
+  },
+  "dependencies": {
+    "slicknav": "*",
+    "susy": "~2.2.6"
+  }
+}

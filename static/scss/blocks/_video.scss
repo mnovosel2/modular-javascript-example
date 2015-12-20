@@ -1,0 +1,23 @@
+.video{
+	width:960px;
+	@extend %margin-top-big;
+	@include breakpoint(md){
+		width:95%;
+	}
+	&__inner{
+		max-width:100%;
+		height:480px;
+		@include breakpoint(md){
+			height:45%;
+		}
+		@include breakpoint(sm){
+			height:40%;
+		}
+	}
+	&__caption{
+		width:400px;
+		@include breakpoint(sm){
+			width:95%;
+		}
+	}
+}

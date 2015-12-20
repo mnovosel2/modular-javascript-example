@@ -1,0 +1,48 @@
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content
+    }
+    &:-moz-placeholder {
+        @content
+    }
+    &::-moz-placeholder {
+        @content
+    }
+    &:-ms-input-placeholder {
+        @content
+    }
+    &.placeholder {
+        @content
+    }
+}
+
+@mixin reset-select-arrow {
+	.ui-select {
+		width: 100%
+	}
+
+	/* This is to remove the arrow of select element in IE */
+	select::-ms-expand {
+		display: none;
+	}
+	select {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-apperance:none;
+		appearance: none;
+	}
+	@-moz-document url-prefix() {
+		.ui-select {
+			border: 1px solid #CCC;
+			border-radius: 4px;
+			box-sizing: border-box;
+			position: relative;
+			overflow: hidden;
+		}
+		.ui-select select {
+			width: 110%;
+			background-position: right 30px center !important;
+			border: none !important;
+		}
+	}
+}

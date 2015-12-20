@@ -1,0 +1,31 @@
+{
+  "name": "dgblog",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Writing future proof modular client side JavaScript",
+  "keywords": [],
+  "dependencies": {
+    "babel-runtime": "^6.3.13",
+    "gulp": "^3.9.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-util": "^3.0.6",
+    "url-loader": "^0.5.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.15",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-transform-runtime": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
+    "html-loader": "^0.4.0",
+    "webpack": "*",
+    "webpack-stream": "*"
+  },
+  "scripts": {
+    "debug": "",
+    "start": ""
+  },
+  "main": "",
+  "author": "Mario Novoselec <mario.novoselec@degordian.com>",
+  "license": ""
+}

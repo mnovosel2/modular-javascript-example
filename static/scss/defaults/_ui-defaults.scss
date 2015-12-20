@@ -1,0 +1,149 @@
+/**
+FONTS
+**/
+%paragraph-text-font {
+	font-family: $georgia-font;
+	font-weight: 300;
+	color: $paragraph-text-color;
+	word-wrap: break-word;
+}
+
+%paragraph-heading-font {
+	font-family: $proxima-font;
+	font-weight: 800;
+	color: $paragraph-heading-color;
+	word-wrap: break-word;
+}
+
+%paragraph-subheading-font {
+	font-family: $proxima-font;
+	font-weight: 800;
+	word-wrap: break-word;
+}
+
+%blockquote-font {
+	font-family: $georgia-font;
+	font-weight: 300;
+	font-style: italic;
+	word-wrap: break-word;
+}
+
+%unordered-list-font {
+	font-family: $georgia-font;
+	color: $unordered-list-color;
+	word-wrap: break-word;
+}
+
+%inner-content-padding {
+	padding: 0 99px;
+}
+
+/**
+    CONTENT
+**/
+.default-inner-padding {
+	padding: 0 15px;
+	@include breakpoint(md) {
+		padding: 0 5px;
+	}
+}
+
+.case-main {
+	position: relative;
+	overflow: hidden;
+}
+
+.case-content {
+	width: 100%;
+	margin: auto;
+}
+
+%content-width {
+	width: 800px;
+	@include breakpoint(md) {
+		width: 80%;
+		margin: 45px auto 0;
+	}
+	@include breakpoint(sm) {
+		margin: 40px auto 0;
+	}
+}
+
+%margin-top-big {
+	margin: 80px auto 0;
+	@include breakpoint(md){
+		margin:50px auto 0;
+	}
+	@include breakpoint(sm){
+		margin:30px auto 0;
+	}
+}
+%margin-50{
+	margin:55px auto;
+	@include breakpoint(md){
+		margin:35px auto;
+	}
+}
+.padding-top-big{
+	padding-top:40px;
+	@include breakpoint(md){
+		padding-top:10px;
+	}
+	@include breakpoint(xs){
+		padding-top:3px;
+	}
+}
+.padding-top-small{
+	padding-top:20px;
+	@include breakpoint(md){
+		padding-top:10px;
+	}
+}
+/**
+    TEXT
+**/
+.paragraph-break {
+	display: block;
+	width: 100%;
+	height: 45px;
+	@include breakpoint(md) {
+		height: 30px;
+	}
+	@include breakpoint(sm) {
+		height: 20px;
+	}
+}
+
+.anchor-red {
+	a {
+		color: $bright-red;
+		text-decoration: underline;
+	}
+}
+.standard-caption{
+	@include font-line-height-em(14px,24px);
+	font-family: $font-georgia;
+	color:$blockquote-text-color;
+	padding-bottom:35px;
+	margin:35px auto 20px;
+	text-align: center;
+	position:relative;
+	@include breakpoint(xs){
+		margin:20px auto;
+		padding-bottom: 25px;
+	}
+	&:after {
+		content: " ";
+		width: 100%;
+		height: 1px;
+		background: $medium-gray;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		@include breakpoint(xs){
+			width:90%;
+			left:5%;
+		}
+	}
+}

@@ -1,0 +1,59 @@
+/**************************************
+    TODO: IMG & FONT LOCATIONS
+**************************************/
+
+$imglink: HTML;
+$routeHTML: '../img/';
+$routePHP: '/static/img/';
+$routeHTMLfont: '../fonts/';
+$routePHPfont: '/static/fonts/';
+
+/**************************************
+    TODO: SELECTION COLORS
+**************************************/
+
+$htmlselectioncolor: #ffffff;
+$htmlselectionbackgroundcolor: #000000;
+
+
+/**************************************
+    TODO: RESPONSIVE VARIABLES
+**************************************/
+
+$screen-lg-desktop-custom: 1376px;
+$screen-md-desktop-custom: 1024px;
+$screen-sm-desktop-custom: 690px;
+$screen-xs-desktop-custom: 450px;
+
+/**************************************
+    TODO: BOOTSTRAP SETTINGS (ON/OFF)
+**************************************/
+
+$bootstrap: false;
+
+@if ($bootstrap) {
+    $one-col-size: percentage(1/$grid-columns);
+    $responsive-screen-lg: $screen-lg-desktop;
+    $responsive-screen-md: $screen-desktop;
+    $responsive-screen-sm: $screen-tablet;
+    $responsive-screen-xs: $screen-phone;
+} @else {
+    $responsive-screen-lg: $screen-lg-desktop-custom;
+    $responsive-screen-md: $screen-md-desktop-custom;
+    $responsive-screen-sm: $screen-sm-desktop-custom;
+    $responsive-screen-xs: $screen-xs-desktop-custom;
+}
+
+/**************************************
+    SELECTION
+**************************************/
+
+::selection {
+    background-color: $htmlselectionbackgroundcolor;
+    color: $htmlselectioncolor;
+}
+
+::-moz-selection {
+    background-color: $htmlselectionbackgroundcolor;
+    color: $htmlselectioncolor;
+}

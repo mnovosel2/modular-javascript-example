@@ -1,0 +1,43 @@
+.slider{
+	@extend %margin-top-big;
+	&__image{
+		max-width:900px;
+		margin:20px 50px;
+		opacity:.5;
+		@include animation(all,0.5);
+		img{
+			max-width: 100%;
+		}
+		@include breakpoint(md){
+			max-width: 550px;
+			margin:20px 30px;
+		}
+		@include breakpoint(sm){
+			max-width:450px;
+			margin:20px 30px;
+		}
+		@include breakpoint(xs){
+			max-width: 240px;
+			margin:20px 10px;
+		}
+	}
+	&__item{
+		height: auto;
+		position:relative;
+	}
+}
+.slick-center{
+	.slider__image{
+		opacity: 1;
+		margin:0 50px;
+		@include breakpoint(md){
+			margin:0 30px;
+		}
+		@include breakpoint(xs){
+			margin:0 10px;
+		}
+	}
+}
+.slick-next{
+	right:0;
+}

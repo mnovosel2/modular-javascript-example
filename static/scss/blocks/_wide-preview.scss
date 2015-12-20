@@ -1,0 +1,27 @@
+.wide-preview{
+	max-width:100%;
+	height:auto;
+	@extend %margin-50;
+	@include breakpoint(md){
+        overflow:hidden;
+    }
+    @include breakpoint(sm){
+       margin-top:40px;
+    }
+	@include breakpoint(xs){
+		margin:20px 0;
+	}
+    &__source{
+        width:100%;
+        height:auto;
+		img{
+			width: 100%;
+		}
+    }
+	&__caption{
+		width:600px;
+		@include breakpoint(sm){
+			width:95%;
+		}
+	}
+}
